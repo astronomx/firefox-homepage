@@ -1,27 +1,18 @@
-import IDNext from "./components/IDNext"
+import React from "react"
+
 import SearchBar from "./components/SearchBar"
 
-export default function Home({ 
-  searchParams 
-}: { 
-  searchParams: { id: string | undefined }
-}) {
+export default function Home() {
 
-  console.log(searchParams)
 
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center" style={{ backgroundImage: "url('https://wallpaperaccess.com/full/8351171.gif')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-        {/* <IDNext /> */}
-        <SearchBar />
+      <div className="flex justify-center items-center min-h-screen" style={{ backgroundImage: "url('https://wallpaperaccess.com/full/8351171.gif')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+        <div className="flex">
+          <SearchBar />
+        </div>
       </div>
     </>
   )
 }
-
-
-// Pak google link
-// plaats e.target.value van input in q param
-// slice woorden en zet '+' tussen de woorden
-// relocate met a tag onclick van search icon of enter
 
