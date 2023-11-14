@@ -1,4 +1,5 @@
 import IDNext from "./components/IDNext"
+import SearchBar from "./components/SearchBar"
 
 export default function Home({ 
   searchParams 
@@ -11,7 +12,8 @@ export default function Home({
   return (
     <>
       <div className="flex min-h-screen flex-col items-center" style={{ backgroundImage: "url('https://wallpaperaccess.com/full/8351171.gif')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-        <IDNext />
+        {/* <IDNext /> */}
+        <SearchBar />
       </div>
     </>
   )
