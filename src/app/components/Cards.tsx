@@ -65,7 +65,7 @@ export default function Cards() {
 
                             <div className="flex flex-row justify-between items-center">
                                 <img src="/icons/work/email-mailbox-open.png" alt="Icoon van een brievenbus die open staat" />
-                                <a href="https://chat.jarvis.bit-academy.nl/5da436d8-de0a-11ea-b861-cec41367f4e7/channels/town-square">Mattermost</a>
+                                <a href="https://chat.jarvis.bit-academy.nl/95e3fd32-a1a8-11ea-a924-cec41367f4e7/channels/town-square">Mattermost</a>
                             </div>
 
                             <div className="flex flex-row justify-between items-center">
