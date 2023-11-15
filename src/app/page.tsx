@@ -1,6 +1,8 @@
 import React from "react";
+
 import SearchBar from "./components/SearchBar";
 import Clock from "./components/Clock";
+import Cards from "./components/Cards";
 
 export default function Home() {
   return (
@@ -14,12 +16,18 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
-        <div className="flex justify-center items-center md: p-4 absolute top-0 mt-36">
+        <div className="flex justify-center items-center p-4 absolute top-0 mt-36">
           <Clock />
         </div>
 
-        <div>
-          <SearchBar />
+        <div className="flex flex-col space-y-10 justify-center items-center">
+          <div>
+            <SearchBar />
+          </div>
+
+          <div>
+            <Cards />
+          </div>
         </div>
       </div>
     </>
