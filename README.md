@@ -56,23 +56,19 @@ This template is highly customizeable depending on your skills
 all the customization is done in one place. In this section you will
 see where to go in the code to edit the thing you want.
 
-* **Background**
-<br />
+### Background
 You can copy and paste the url of a picture in the
 **src/app/app.tsx**
 
-* **Fonts**
-<br />
+### Fonts
 Install your favourite font an put the font in the **fonts** folder.
 After you did that go to **src/app/layout.tsx** and change the name of the
 font that you want it to be.
 
-* **Cards**
-<br />
+### Cards
 The cards are highly customizeable you can change the color,
 size, content and order of them in **src/app/components/Cards.tsx**
 
-* **Searchbar**
-<br />
+### Searchbar
 If you want you can change the color, placeholder and icon of
 the searchbar. This can be done in **src/app/components/Searchbar.tsx**
