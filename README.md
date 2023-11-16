@@ -49,4 +49,26 @@ npm install
 4. Host the page on a server. I used [Vercel]('https://vercel.com/') for this.
 5. Go to the extension settings and put the link to your hosted page in the URL field.
 6. Press the **Keep Changes** button and you are done.
-7. Enjoy your new homepage. 🥳 
+7. Enjoy your new homepage🥳 
+
+## How to customize
+This template is highly customizeable depending on your skills
+all the customization is done in one place. In this section you will
+see where to go in the code to edit the thing you want.
+
+### Background
+You can copy and paste the url of a picture in the
+**src/app/app.tsx**
+
+### Fonts
+Install your favourite font an put the font in the **fonts** folder.
+After you did that go to **src/app/layout.tsx** and change the name of the
+font that you want it to be.
+
+### Cards
+The cards are highly customizeable you can change the color,
+size, content and order of them in **src/app/components/Cards.tsx**
+
+### Searchbar
+If you want you can change the color, placeholder and icon of
+the searchbar. This can be done in **src/app/components/Searchbar.tsx**
