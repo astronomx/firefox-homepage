@@ -60,12 +60,12 @@ export default function Cards() {
 
                             <div className="flex flex-row justify-between items-center">
                                 <img src="/icons/work/technology-robot-ai-signal-1.png" alt="Icoon van een lachende robot" />
-                                <a href="https://purmerend.jarvis.bit-academy.nl/a/dashboard">Jarvis</a>
+                                <a href="https://purmerend.app.nexed.com/a/dashboard">Jarvis</a>
                             </div>
 
                             <div className="flex flex-row justify-between items-center">
                                 <img src="/icons/work/email-mailbox-open.png" alt="Icoon van een brievenbus die open staat" />
-                                <a href="https://chat.jarvis.bit-academy.nl/95e3fd32-a1a8-11ea-a924-cec41367f4e7/channels/town-square">Mattermost</a>
+                                <a href="https://chat.nexed.com/5da436d8-de0a-11ea-b861-cec41367f4e7/channels/town-square">Mattermost</a>
                             </div>
 
                             <div className="flex flex-row justify-between items-center">

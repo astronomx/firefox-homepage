@@ -1,24 +1,19 @@
-'use client'
-import React, { useState, useEffect } from 'react';
+'use client';
+import React, { useState } from 'react';
+import { useLocalStorage } from "@uidotdev/usehooks";
 import { PlusCircleIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 export default function Notes() {
-  const [notes, setNotes] = useState<{ text: string; timestamp: number }[]>([]);
+  const [notes, setNotes] = useLocalStorage<{ text: string; timestamp: number }[]>("notes", []);
   const [newNote, setNewNote] = useState<string>('');
   const [isAddingNote, setIsAddingNote] = useState<boolean>(false);
 
-  // Load notes from local storage on component mount
-  useEffect(() => {
-    const storedNotes = localStorage.getItem('notes');
-    if (storedNotes) {
-      setNotes(JSON.parse(storedNotes));
-    }
-  }, []);
-
-  // Save notes to local storage whenever the 'notes' state changes
-  useEffect(() => {
-    localStorage.setItem('notes', JSON.stringify(notes));
-  }, [notes]);
+  const saveNotesToLocalStorage = () => {
+    // Note: useLocalStorage hook automatically saves to local storage when the state changes
+    // So, you don't need to manually call localStorage.setItem here
+    // Just setNotes with the updated value, and it will handle the saving to local storage
+    setNotes(notes);
+  };
 
   const addNote = () => {
     if (newNote.trim() !== '') {
@@ -37,7 +32,7 @@ export default function Notes() {
 
   const formatTimestamp = (timestamp: number) => {
     const date = new Date(timestamp);
-    const options = {
+    const options: Intl.DateTimeFormatOptions = {
       year: 'numeric',
       month: 'short',
       day: 'numeric',
@@ -47,7 +42,7 @@ export default function Notes() {
     return date.toLocaleDateString('nl-NL', options); // Adjust this based on your date and time format preferences
   };
 
-  const handleKeyDown = (e: any) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       addNote();
     }
@@ -83,7 +78,7 @@ export default function Notes() {
               value={newNote}
               onChange={(e) => setNewNote(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="w-80 h-10 rounded-lg drop-shadow-xl text-black px-4 break-all"
+              className="w-80 h-10 rounded-lg drop-shadow-xl text-black text-md px-4 break-all"
             />
             <div className="flex justify-center">
               <button className="bg-[#FF9EFF] px-4 py-1 rounded-lg" onClick={() => setIsAddingNote(false)}>
@@ -100,4 +95,3 @@ export default function Notes() {
     </>
   );
 }
-
