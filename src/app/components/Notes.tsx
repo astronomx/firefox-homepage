@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import { useLocalStorage } from "@uidotdev/usehooks";
+// import { useLocalStorage } from "@uidotdev/usehooks";
+import { useLocalStorage } from '../hooks/LocalStorage';
 import { PlusCircleIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 export default function Notes() {
