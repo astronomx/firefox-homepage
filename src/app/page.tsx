@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar";
 import Clock from "./components/Clock";
 import Cards from "./components/Cards";
 import Notes from "./components/Notes";
+import Weather from "./components/Weather";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
+        <Weather />
+
         <div className="absolute top-0 right-0 p-10">
           <Notes />
         </div>
