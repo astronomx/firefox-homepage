@@ -1,6 +1,6 @@
 export default function Weather() {
     return (
-      <div className="absolute z-0 top-5 left-5">
+      <div className="absolute flex justify-center bottom-10 md:left-auto md:bottom-5 md:right-5">
         <div style={{ maxWidth: 500 }}>
           <iframe
             title="widget"
