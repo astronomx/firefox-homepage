@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="flex min-h-screen justify-center items-center relative"
+        className="flex flex-col min-h-screen items-center"
         style={{
           backgroundImage: "url('https://wallpaperaccess.com/full/8351171.gif')",
           backgroundSize: "cover",
@@ -17,19 +17,23 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
-        <Weather />
 
-        <div className="absolute top-0 right-0 p-10">
+        <div className="flex justify-end w-full mt-5 mr-5">
           <Notes />
         </div>
 
-        <div className="flex justify-center items-center p-4 absolute top-0 mt-36">
-          <Clock />
-        </div>
-
         <div className="flex flex-col space-y-10 justify-center items-center">
+
+          <div>
+            <Clock />
+          </div>
+
           <div>
             <SearchBar />
+          </div>
+
+          <div>
+            <Weather />
           </div>
 
           <div>

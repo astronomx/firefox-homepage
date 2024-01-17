@@ -51,18 +51,18 @@ export default function Notes() {
 
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="hidden sm:flex sm:flex-col">
         <div>
-          <h1 className="text-4xl font-bold">Notes</h1>
+          <h1 className="text-4xl text-center font-bold">Notes</h1>
           <ul>
             {notes.map((note, index) => (
               <div key={index} className="mb-3 drop-shadow-lg">
                 <li className="flex flex-col text-lg bg-[#FF9EFF] p-2 rounded-lg w-80 break-all relative">
                   <span>{formatTimestamp(note.timestamp)}</span>
-            
+
                   <div className="flex items-center justify-between">
                     <span>{note.text}</span>
-            
+
                     <button onClick={() => deleteNote(index)} className="absolute right-2 top-2">
                       <TrashIcon className="h-4 w-4 text-white" />
                     </button>
