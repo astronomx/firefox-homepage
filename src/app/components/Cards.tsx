@@ -12,7 +12,7 @@ export default function Cards() {
 
   return (
     <>
-      <div className="flex flex-row space-x-12">
+      <div className="flex flex-row space-x-24">
         {/* Programming Dropdown */}
         <div className="relative">
           <button
@@ -22,7 +22,7 @@ export default function Cards() {
             Programming
           </button>
           {showProgramming && (
-            <div className="dropdown bg-[#FF9EFF] rounded-xl p-4 absolute left-0 mt-2">
+            <div className="dropdown rounded-xl p-4 absolute left-0 mt-2">
               {/* Programming card content here */}
             </div>
           )}
@@ -30,11 +30,14 @@ export default function Cards() {
 
         {/* Working Tools Dropdown */}
         <div className="relative">
-          <button onClick={toggleWorkingTools} className="card-toggle-button">
+          <button
+            onClick={toggleWorkingTools}
+            className="card-toggle-button border-b-2 border-white text-2xl font-bold"
+          >
             Working Tools
           </button>
           {showWorkingTools && (
-            <div className="dropdown bg-[#FF9EFF] rounded-xl p-4 absolute left-0 mt-2">
+            <div className="dropdown rounded-xl p-4 absolute left-0 mt-2">
               {/* Working Tools card content here */}
             </div>
           )}
@@ -42,11 +45,14 @@ export default function Cards() {
 
         {/* Entertainment Dropdown */}
         <div className="relative">
-          <button onClick={toggleEntertainment} className="card-toggle-button">
+          <button
+            onClick={toggleEntertainment}
+            className="card-toggle-button border-b-2 border-white text-2xl font-bold"
+          >
             Entertainment
           </button>
           {showEntertainment && (
-            <div className="dropdown bg-[#FF9EFF] rounded-xl p-4 absolute left-0 mt-2">
+            <div className="dropdown rounded-xl p-4 absolute left-0 mt-2">
               {/* Entertainment card content here */}
             </div>
           )}
