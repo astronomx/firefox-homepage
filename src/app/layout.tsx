@@ -6,7 +6,7 @@ import localFont from '@next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const pixelFont = localFont({ src: '../../fonts/ProggyCleanCENerdFont-Regular.ttf' })
+const markPro = localFont({ src: '../../fonts/FFMarkProAF-Book.ttf' })
 
 export const metadata: Metadata = {
   title: 'New Tab',
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={pixelFont.className}>{children}</body>
+      <body className={markPro.className}>{children}</body>
     </html>
   )
 }
