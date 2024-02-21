@@ -10,7 +10,7 @@ export default function Home() {
         className="flex flex-col min-h-screen items-center"
         style={{
           backgroundImage:
-            "url('https://wallpaperaccess.com/full/8351171.gif')",
+            "url('images/fluid-background.jpg')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
