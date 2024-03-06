@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 export default function Cards() {
@@ -15,7 +15,6 @@ export default function Cards() {
   const toggleModal = () => setShowModal(!showModal);
 
   const handleConfirmPort = () => {
-
     window.location.href = `http://localhost:${port}`;
     setShowModal(false);
   };
@@ -44,7 +43,7 @@ export default function Cards() {
                   <a href="https://github.com/">Github</a>
                 </li>
                 <li>
-                  <button onClick={toggleModal}>localhost</button>
+                  <a onClick={toggleModal}>Localhost</a>
                 </li>
                 <li>
                   <a href="https://mycolor.space/">ColorSpace</a>
@@ -80,6 +79,9 @@ export default function Cards() {
                 </li>
                 <li>
                   <a href="https://www.photopea.com/">PhotoPea</a>
+                </li>
+                <li>
+                  <a href="https://app.flocus.com/">Flocus</a>
                 </li>
               </ul>
             </div>
